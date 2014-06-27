@@ -1,0 +1,11 @@
+{
+  "name": "edx-modulestore",
+  "version": "0.0.0",
+  "description": "Easy browsing of Open edX modulestores",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^3.8.12",
+    "lodash": "^2.4.1"
+  }
+}
