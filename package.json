@@ -7,6 +7,7 @@
   "dependencies": {
     "mongoose": "^3.8.12",
     "lodash": "^2.4.1",
-    "moment": "^2.7.0"
+    "moment": "^2.7.0",
+    "q": "^1.0.1"
   }
 }
