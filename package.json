@@ -1,13 +1,28 @@
 {
   "name": "edx-modulestore",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Easy browsing of Open edX modulestores",
-  "author": "",
+  "author": "Bertrand Marron",
   "license": "MIT",
+  "main": "index.js",
   "dependencies": {
     "mongoose": "^3.8.12",
     "lodash": "^2.4.1",
     "moment": "^2.7.0",
     "q": "^1.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IONISx/edx-modulestore.git"
+  },
+  "keywords": [
+    "Open edX",
+    "edX",
+    "modulestore"
+  ],
+  "bugs": {
+    "url": "https://github.com/IONISx/edx-modulestore/issues"
+  },
+  "homepage": "https://github.com/IONISx/edx-modulestore"
 }
