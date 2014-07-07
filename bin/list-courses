@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 var Q = require('q');
-var modulestore = require('..')();
+var modulestore = require('..')({
+    lmsBase: 'http://example.com'
+});
 
 if (process.argv.length < 3) {
     console.error('error: pass the connection string to the mongodb')
