@@ -9,30 +9,29 @@ if (process.argv.length < 3) {
     console.error('error: pass the connection string to the mongodb')
     process.exit(1);
 }
-modulestore.connect(process.argv[2]);
-
-modulestore.on('connected', function () {
-    this.findOrganizations()
-        .then(function (organizations) {
-            return Q.all(organizations.map(function (o) {
-                return o.findCourses();
-            }));
-        })
-        .then(function (orgs, d) {
-            orgs.forEach(function (o) {
-                console.log('Courses by ' + o[0].organization + ':');
-                o.forEach(function (course, index) {
-                    console.log(index + ':', course);
-                });
-                console.log();
+modulestore.connect(process.argv[2])
+    .then(function () {
+        return modulestore.findOrganizations();
+    })
+    .then(function (organizations) {
+        return Q.all(organizations.map(function (o) {
+            return o.findCourses();
+        }));
+    })
+    .then(function (orgs, d) {
+        orgs.forEach(function (o) {
+            console.log('Courses by ' + o[0].organization + ':');
+            o.forEach(function (course, index) {
+                console.log(index + ':', course);
             });
-        })
-        .catch(function (err) {
-            console.error('============== ERROR ENCOUNTERED ============')
-            console.trace(err);
-            console.error('=============================================')
-        })
-        .fin(function () {
-            modulestore.disconnect();
+            console.log();
         });
-});
+    })
+    .catch(function (err) {
+        console.error('============== ERROR ENCOUNTERED ============')
+        console.trace(err);
+        console.error('=============================================')
+    })
+    .fin(function () {
+        modulestore.disconnect();
+    });
