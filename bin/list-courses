@@ -2,7 +2,8 @@
 
 var Q = require('q');
 var modulestore = require('..')({
-    lmsBase: 'http://example.com'
+    lmsBase: 'http://example.com',
+    studioBase: 'http://studio.example.com'
 });
 
 if (process.argv.length < 3) {
