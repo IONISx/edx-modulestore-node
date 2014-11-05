@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-var Q = require('q');
+var Q = require('kew');
+var _ = require('lodash');
 var modulestore = require('..')({
-    lmsBase: 'http://example.com',
-    studioBase: 'http://studio.example.com'
+    lmsUrl: 'http://courses.ionisx.com',
+    studioUrl: 'http://studio.example.com'
 });
 
 if (process.argv.length < 3) {
@@ -12,23 +13,19 @@ if (process.argv.length < 3) {
 }
 modulestore.connect(process.argv[2])
     .then(function () {
-        return modulestore.findOrganizations();
+        return modulestore.getCourse('foo');
     })
-    .then(function (organizations) {
-        return Q.all(organizations.map(function (o) {
-            return o.findCourses();
-        }));
+    .then(function (course) {
+        console.log(course.name);
+
+        course.name = 'New name';
+
+        return course.save();
     })
-    .then(function (orgs, d) {
-        orgs.forEach(function (o) {
-            console.log('Courses by ' + o[0].organization + ':');
-            o.forEach(function (course, index) {
-                console.log(index + ':', course);
-            });
-            console.log();
-        });
+    .then(function (course) {
+        console.log(course);
     })
-    .catch(function (err) {
+    .fail(function (err) {
         console.error('============== ERROR ENCOUNTERED ============')
         console.trace(err);
         console.error('=============================================')

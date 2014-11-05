@@ -4,13 +4,102 @@
 
 ## Getting started
 
-*Soon*
+*TODO*
 
 ## Documentation
 
-### Courses
+### Course attributes
 
-#### States
+#### Id
+
+Name: `id`  
+Type: `String`  
+
+**Read-only** attribute used to find and identify courses.
+
+#### Name
+
+Name: `name`  
+Type: `String`  
+
+Name or title of the course.
+
+#### Number
+
+Name: `number`  
+Type: `String`  
+
+Number of the course (e.g.: `"CS101"`).
+
+#### Organization
+
+Name: `organization`  
+Type: `String`  
+
+Organizer of the course (e.g.: `"IONISx"`).
+
+#### Description (external)
+
+Name: `description`  
+Type: `String`  
+
+Short description of the course.
+
+#### Start date
+
+Name: `startDate`  
+Type: `Date`  
+
+Start date of the course.
+
+#### End date
+
+Name: `endDate`  
+Type: `Date`  
+
+End date of the course.
+
+#### Enrollment start date
+
+Name: `enrollmentStartDate`  
+Type: `Date`  
+
+Enrollment start date of the course.
+
+#### Enrollment end date
+
+Name: `enrollmentEndDate`  
+Type: `Date`  
+
+Enrollment end date of the course.
+
+#### Overview (external)
+
+Name: `overview`  
+Type: `String` (usually HTML)  
+
+Overview of the course, usually used on the course’s about page.
+
+#### About page URL
+
+Name: `aboutPage`  
+Type: `String`  
+
+Link to the about page (on the LMS – if configured correclty).
+
+#### Thumbnail URL
+
+Name: `image`  
+Type: `String`  
+
+Link to the course’s thumbnail (on the LMS _ if configured correclty).
+
+#### State
+
+Name: `state`  
+Type: `String` (enumeration)  
+
+Determines the state of the course, with the following values:
 
 State | Description | Can enroll? | Can access?
 --- | --- | --- | ---
