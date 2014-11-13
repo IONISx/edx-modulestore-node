@@ -2,28 +2,21 @@
 
 var Q = require('kew');
 var _ = require('lodash');
-var modulestore = require('..')({
-    lmsUrl: 'http://courses.ionisx.com',
-    studioUrl: 'http://studio.example.com'
-});
+var modulestore = require('..')();
 
 if (process.argv.length < 3) {
     console.error('error: pass the connection string to the mongodb')
     process.exit(1);
 }
+
 modulestore.connect(process.argv[2])
     .then(function () {
-        return modulestore.getCourse('foo');
+        return modulestore.listCourses({}, {
+            lmsUrl: 'http://localhost:8000'
+        });
     })
-    .then(function (course) {
-        console.log(course.name);
-
-        course.name = 'New name';
-
-        return course.save();
-    })
-    .then(function (course) {
-        console.log(course);
+    .then(function (courses) {
+        console.log(courses);
     })
     .fail(function (err) {
         console.error('============== ERROR ENCOUNTERED ============')
