@@ -12,7 +12,8 @@ if (process.argv.length < 3) {
 modulestore.connect(process.argv[2])
     .then(function () {
         return modulestore.listCourses({}, {
-            lmsUrl: 'http://localhost:8000'
+            lmsUrl: 'http://localhost:8000',
+            studioUrl: 'http://localhost:8001'
         });
     })
     .then(function (courses) {
