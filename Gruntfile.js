@@ -6,14 +6,15 @@ module.exports = function (grunt) {
     grunt.initConfig({
         jshint: {
             options: {
-                jshintrc: true,
+                jshintrc: true
             },
             node: {
                 files: {
                     src: [
                         'Gruntfile.js',
                         'index.js',
-                        'lib/**/*.js'
+                        'lib/**/*.js',
+                        'bin/**/*.js'
                     ]
                 }
             }

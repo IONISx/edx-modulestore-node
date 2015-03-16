@@ -4,7 +4,7 @@ var _ = require('lodash');
 var modulestore = require('..');
 
 if (process.argv.length < 3) {
-    console.error('error: pass the connection string to the mongodb')
+    console.error('error: pass the connection string to the mongodb');
     process.exit(1);
 }
 
@@ -17,7 +17,7 @@ modulestore.connect(process.argv[2])
     .then(function (courses) {
         if (courses.length > 0) {
             var c = courses[0];
-            console.log(c.name + ' (' + c.aboutPage + ')')
+            console.log(c.name + ' (' + c.aboutPage + ')');
             return c.listChildren();
         }
     })
@@ -28,7 +28,7 @@ modulestore.connect(process.argv[2])
                 console.log('CHAPTER: ' + c.name + ' (starts on ' + c.startDate + ' )');
             }
             else {
-                console.log('CHAPTER: ' + c.name)
+                console.log('CHAPTER: ' + c.name);
             }
             return c.listChildren();
         }
@@ -44,9 +44,9 @@ modulestore.connect(process.argv[2])
         });
     })
     .catch(function (err) {
-        console.error('============== ERROR ENCOUNTERED ============')
+        console.error('============== ERROR ENCOUNTERED ============');
         console.trace(err);
-        console.error('=============================================')
+        console.error('=============================================');
     })
     .finally(function () {
         modulestore.disconnect();
