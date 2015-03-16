@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-var Q = require('kew');
 var _ = require('lodash');
 var modulestore = require('..');
 
@@ -44,11 +43,11 @@ modulestore.connect(process.argv[2])
             }
         });
     })
-    .fail(function (err) {
+    .catch(function (err) {
         console.error('============== ERROR ENCOUNTERED ============')
         console.trace(err);
         console.error('=============================================')
     })
-    .fin(function () {
+    .finally(function () {
         modulestore.disconnect();
     });

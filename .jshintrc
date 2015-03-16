@@ -13,5 +13,6 @@
     "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
     "boss"          : true,     // true: Tolerate assignments where comparisons would be expected
     "eqnull"        : true,     // true: Tolerate use of `== null`
-    "node"          : true      // Node.js
+    "node"          : true,     // Node.js
+    "predef"        : [ "-Promise" ]
 }
