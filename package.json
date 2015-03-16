@@ -9,16 +9,16 @@
   },
   "main": "index.js",
   "dependencies": {
-    "mongoose": "^3.8.18",
+    "mongoose": "^3.8.25",
     "mongoose-long": "0.0.2",
-    "lodash": "^2.4.1",
-    "moment": "^2.7.0",
+    "lodash": "^3.5.0",
+    "moment": "^2.9.0",
     "bluebird": "^2.9.14"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "load-grunt-tasks": "^1.0.0"
+    "grunt-contrib-jshint": "^0.11.0",
+    "load-grunt-tasks": "^3.1.0"
   },
   "repository": {
     "type": "git",

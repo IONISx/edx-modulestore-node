@@ -1,5 +1,9 @@
 # edx-modulestore
 
+[![Build Status](https://secure.travis-ci.org/IONISx/edx-modulestore.svg?branch=master)](https://travis-ci.org/IONISx/edx-modulestore)
+[![Dependencies Status](https://david-dm.org/IONISx/edx-modulestore.svg)](https://david-dm.org/IONISx/edx-modulestore)
+[![Dev Dependencies Status](https://david-dm.org/IONISx/edx-modulestore/dev-status.svg)](https://david-dm.org/IONISx/edx-modulestore#info=devDependencies)
+
 > Easy browsing of Open edX modulestores
 
 ## Getting started
