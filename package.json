@@ -1,6 +1,6 @@
 {
   "name": "edx-modulestore",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Easy browsing of Open edX modulestores",
   "author": "Bertrand Marron",
   "license": "MIT",
