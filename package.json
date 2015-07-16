@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "mongoose": "4.0.2",
+    "mongoose": "4.0.7",
     "mongoose-long": "0.0.2",
     "lodash": "3.5.0",
     "moment": "2.9.0",
