@@ -1,8 +1,8 @@
 # edx-modulestore
 
-[![Build Status](https://circleci.com/gh/IONISx/edx-modulestore.svg?style=svg)](https://circleci.com/gh/IONISx/edx-modulestore)
-[![Dependencies Status](https://david-dm.org/IONISx/edx-modulestore.svg)](https://david-dm.org/IONISx/edx-modulestore)
-[![Dev Dependencies Status](https://david-dm.org/IONISx/edx-modulestore/dev-status.svg)](https://david-dm.org/IONISx/edx-modulestore#info=devDependencies)
+[![Build Status](https://circleci.com/gh/IONISx/edx-modulestore-node.svg?style=svg)](https://circleci.com/gh/IONISx/edx-modulestore-node)
+[![Dependencies Status](https://david-dm.org/IONISx/edx-modulestore-node.svg)](https://david-dm.org/IONISx/edx-modulestore-node)
+[![Dev Dependencies Status](https://david-dm.org/IONISx/edx-modulestore-node/dev-status.svg)](https://david-dm.org/IONISx/edx-modulestore-node#info=devDependencies)
 
 > Easy browsing of Open edX modulestores
 
