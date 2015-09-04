@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/IONISx/edx-modulestore.git"
+    "url": "git://github.com/IONISx/edx-modulestore-node.git"
   },
   "keywords": [
     "Open edX",
@@ -32,7 +32,7 @@
     "modulestore"
   ],
   "bugs": {
-    "url": "https://github.com/IONISx/edx-modulestore/issues"
+    "url": "https://github.com/IONISx/edx-modulestore-node/issues"
   },
-  "homepage": "https://github.com/IONISx/edx-modulestore"
+  "homepage": "https://github.com/IONISx/edx-modulestore-node"
 }
