@@ -1,10 +1,10 @@
-# edx-modulestore
+# edx-modulestore [![Build Status](https://circleci.com/gh/IONISx/edx-modulestore-node.svg?style=svg)](https://circleci.com/gh/IONISx/edx-modulestore-node)
 
-[![Build Status](https://circleci.com/gh/IONISx/edx-modulestore-node.svg?style=svg)](https://circleci.com/gh/IONISx/edx-modulestore-node)
 [![Dependencies Status](https://david-dm.org/IONISx/edx-modulestore-node.svg)](https://david-dm.org/IONISx/edx-modulestore-node)
 [![Dev Dependencies Status](https://david-dm.org/IONISx/edx-modulestore-node/dev-status.svg)](https://david-dm.org/IONISx/edx-modulestore-node#info=devDependencies)
+[![npm version](https://img.shields.io/npm/v/edx-modulestore.svg)](https://www.npmjs.com/package/edx-modulestore)
 
-> Easy browsing of Open edX modulestores
+> Easy browsing of Open edX Modulestores
 
 ## Getting started
 
@@ -113,6 +113,18 @@ State | Description | Can enroll? | Can access?
 `finishing` | Course is running but enrollement is closed | No | Yes
 `finished` | Course is closed | No | No
 
-## License
+## Development
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)
+Feel free to contribute :)
+
+```
+    ╚⊙ ⊙╝
+  ╚═(███)═╝
+ ╚═(███)═╝
+╚═(███)═╝
+ ╚═(███)═╝
+  ╚═(███)═╝
+   ╚═(███)═╝
+```
+
+![MIT](https://img.shields.io/badge/licence-MIT-blue.svg)
