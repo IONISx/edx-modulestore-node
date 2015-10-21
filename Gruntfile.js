@@ -41,4 +41,8 @@ module.exports = function (grunt) {
         'jscs',
         'jshint'
     ]);
+
+    grunt.registerTask('test:ci', [
+        'test'
+    ]);
 };
