@@ -9,10 +9,10 @@
   },
   "main": "index.js",
   "dependencies": {
-    "bluebird": "2.10.0",
+    "bluebird": "2.10.2",
     "lodash": "3.10.1",
     "moment": "2.10.6",
-    "mongoose": "4.1.7",
+    "mongoose": "4.1.12",
     "mongoose-long": "0.0.2"
   },
   "devDependencies": {
