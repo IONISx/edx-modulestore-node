@@ -5,26 +5,8 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
-        jscs: {
+        eslint: {
             all: {
-                files: {
-                    src: [
-                        'Gruntfile.js',
-                        'lib/**/*.js',
-                        'bin/**/*.js',
-                        'index.js'
-                    ]
-                }
-            }
-        },
-
-        // ## //
-
-        jshint: {
-            options: {
-                jshintrc: true
-            },
-            node: {
                 files: {
                     src: [
                         'Gruntfile.js',
@@ -38,11 +20,10 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('test', [
-        'jscs',
-        'jshint'
+        'eslint'
     ]);
 
     grunt.registerTask('test:ci', [
-        'test'
+        'eslint'
     ]);
 };
