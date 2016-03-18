@@ -8,6 +8,10 @@
     "test": "gulp test"
   },
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "dependencies": {
     "bluebird": "3.3.4",
     "lodash": "4.6.1",
