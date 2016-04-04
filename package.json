@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/IONISx/edx-modulestore-node/issues"
   },
-  "homepage": "https://github.com/IONISx/edx-modulestore-node"
+  "homepage": "https://github.com/IONISx/edx-modulestore-node",
+  "greenkeeper": {
+    "label": "dependencies"
+  }
 }
