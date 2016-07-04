@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "gulp": "3.9.1",
-    "gulp-eslint": "3.0.0"
+    "gulp-eslint": "3.0.1"
   },
   "repository": {
     "type": "git",
