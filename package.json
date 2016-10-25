@@ -16,7 +16,7 @@
     "bluebird": "^3.3.4",
     "lodash": "^4.8.2",
     "moment": "^2.12.0",
-    "mongoose": "^4.4.11",
+    "mongoose": "^4.6.5",
     "mongoose-long": "~0.1.0"
   },
   "devDependencies": {
