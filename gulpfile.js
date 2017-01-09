@@ -1,5 +1,5 @@
-var gulp   = require('gulp');
-var eslint = require('gulp-eslint');
+const gulp   = require('gulp');
+const eslint = require('gulp-eslint');
 
 // ## //
 

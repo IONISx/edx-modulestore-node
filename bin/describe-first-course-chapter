@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var modulestore = require('..');
+const modulestore = require('..');
 
 // ## //
 
@@ -17,14 +17,14 @@ modulestore.connect(process.argv[2])
     })
     .then(function (courses) {
         if (courses.length > 0) {
-            var c = courses[0];
+            const c = courses[0];
             console.log(c.name + ' (' + c.aboutPage + ')');
             return c.listChildren();
         }
     })
     .then(function (children) {
         if (children.length > 0) {
-            var c = children[0];
+            const c = children[0];
             if (c.startDate) {
                 console.log('CHAPTER: ' + c.name + ' (starts on ' + c.startDate + ' )');
             }

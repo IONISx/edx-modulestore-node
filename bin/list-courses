@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var modulestore = require('..');
+const modulestore = require('..');
 
 // ## //
 
